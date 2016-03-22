@@ -21,7 +21,7 @@ numbers.each{|k, v| puts v} #iteration within the hash. only value
 
 numbers.each{|k, v| puts "The key is #{k} and the value is #{v}"} #iteration through everything
 
-puts numbers.each{ |k,v| numbers.delete(k) if v > 3 } #itaration with condition
+puts numbers.each{ |k,v| numbers.delete(k) if v > 3 else} #itaration with condition
 
 numbers[:d] = 5
 numbers[:e] = 9
