@@ -7,7 +7,6 @@ def menu
   gets.chomp
 end
 
-
 Starting_Balance = 100.0 #a variable started with capital letter is a Constante
 File_Name = 'balance.txt'
 
@@ -54,3 +53,4 @@ loop do
     puts 'Inputs must be D, W, B or Q'
   end
 end
+file.close
