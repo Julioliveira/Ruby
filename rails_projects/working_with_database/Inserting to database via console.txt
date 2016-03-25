@@ -1,0 +1,16 @@
+in the terminal type:
+rails console
+it gives access to the database directly
+Table = class name
+commands:
+
+Table.all (shows all the columns)
+Table (shows the table fields)
+variable = Table.new (creates an object for the table)
+variable.column1 = "Writing Something" (sets the column)
+variable.save (adds it to the table)
+
+variable = Table.new(column1: value1, column2:value2)
+variable.save
+
+Table.create(column1: value1, column2: value2)

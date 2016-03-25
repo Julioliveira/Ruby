@@ -1,0 +1,10 @@
+in the Rails console
+
+Update:
+variable = Table.find(id)
+variable.column = value
+article.save (saves in the db)
+
+Delete:
+variable = Table.find(id)
+variable.destroy

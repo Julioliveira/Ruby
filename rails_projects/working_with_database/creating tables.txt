@@ -1,0 +1,23 @@
+to create a table:
+terminal a type: rails generate migration create_articles
+
+the migration is created and now can go to the DB folder and add the columns
+by writing: t.hereGoesType :hereGoesName
+
+then go back to terminal and type: rake db:migrate
+
+add more columns:
+options:
+1.
+rake db:rollback (drops the table)
+go back to migration file and add the column
+
+2. (preferred way)
+terminal: rails generate migration add_description_to_articles(table)
+go to the new file in migrate folder and put into change method:
+add_column :tablename, :columnName, :typeOfData
+
+to create timestamps:
+
+add_column :tablename, :created_at, :datetime
+add_column :tablename, :updated_at, :datetime
