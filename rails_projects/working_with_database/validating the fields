@@ -1,0 +1,19 @@
+validating the fields
+
+Go to the model something.rb and write the validation there.
+
+Ex:
+class Article < ActiveRecord::Base
+  validates :title, presence: true
+
+end
+
+
+this means that title is required.
+
+
+On the console, if there's a problem to save something, you can use:
+
+article.errors.any? (returns true or false if there's an error)
+
+article.errors.full_messages (shows the error message)
