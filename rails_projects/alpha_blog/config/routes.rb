@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
 
-  resources :articles
+  resources :articles #gives all paths: new, destroy, index, etc verify with 'rake routes'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
