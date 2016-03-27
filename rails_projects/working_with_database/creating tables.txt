@@ -6,6 +6,9 @@ by writing: t.hereGoesType :hereGoesName
 
 then go back to terminal and type: rake db:migrate
 
+for production: heroku run rake db:migrate
+
+
 add more columns:
 options:
 1.
