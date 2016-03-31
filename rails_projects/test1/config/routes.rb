@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  resources :users
   resources :comments
-  resources :users
-  resources :users
   resources :users
   resources :articles
   # The priority is based upon order of creation: first created -> highest priority.
@@ -10,9 +7,6 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-
-  get 'welcome/home', to: 'welcome#home'
-  get 'welcome/about', to: 'welcome#about'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -43,7 +37,8 @@ Rails.application.routes.draw do
 
   # Example resource route with more complex sub-resources:
   #   resources :products do
-  #     #     resources :sales do
+  #     resources :comments
+  #     resources :sales do
   #       get 'recent', on: :collection
   #     end
   #   end
