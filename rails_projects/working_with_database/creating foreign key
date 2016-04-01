@@ -1,0 +1,3 @@
+creating foreign key
+
+rails generate scaffold Comment description:text user:references

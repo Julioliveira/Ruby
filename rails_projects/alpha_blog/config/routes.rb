@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   resources :articles #gives all paths: new, destroy, index, etc verify with 'rake routes'
 
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
